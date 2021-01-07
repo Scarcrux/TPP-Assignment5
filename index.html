@@ -18,9 +18,11 @@
         <button class="menu-button" onClick="removeColumn()">Remove Column</button>
         <div class="dropdown">
             <button class="menu-button">Color Selection</button>
-            <select class="color-options" id="drop">
-                <a onClick="pickNeonGreen()" class = "color-options" id = "neonGreen">Neon Green</a>
-            </select>
+            <div class="color-options" id="drop">
+                <a onClick="pickNeonGreen()"  id = "neonGreen">Neon Green</a>
+                <a onClick="pickNeonGreen()"  id = "neonGreen">Purple</a>
+                <a onClick="pickNeonGreen()"  id = "neonGreen">Reset</a>
+            </div>
         </div>
         <button class="menu-button" onClick="fillAllUncolored()">Fill All Uncolored Cells</button>
         <button class="menu-button" onClick="fillAllCells()">Fill All Cells</button>
