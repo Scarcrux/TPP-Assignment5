@@ -96,3 +96,13 @@ fillAllCells = () => {
     cell.classList.remove("uncolored");
   });
 }
+
+// Requirement 9: Clear All Cells
+clearAllCells = () => {
+  let cells = document.getElementsByClassName("grid-cell");
+
+  [...cells].forEach(cell => {
+    cell.style.backgroundColor = "";
+    cell.classList.add("uncolored");
+  });
+}
