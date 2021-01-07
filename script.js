@@ -70,9 +70,9 @@ fillAllUncolored = () => {
   let cells = document.getElementsByClassName("grid-cell");
   let uncolored = [...cells].filter(cell => cell.classList.contains("uncolored"));
 
-  uncolored.forEach(cell => {
-      cell.style.backgroundColor = currentColor;
-      cell.classList.remove("uncolored");
+  uncolored.forEach (cell => {
+    cell.style.backgroundColor = currentColor;
+    cell.classList.remove("uncolored");
   });
 }
 
@@ -81,7 +81,7 @@ fillAllUncolored = () => {
   let cells = document.getElementsByClassName("grid-cell");
   let uncolored = [...cells].filter(cell => cell.classList.contains("uncolored"));
 
-  uncolored.forEach(cell => {
+  uncolored.forEach (cell => {
     cell.style.backgroundColor = currentColor;
     cell.classList.remove("uncolored");
   });
@@ -101,7 +101,7 @@ fillAllCells = () => {
 clearAllCells = () => {
   let cells = document.getElementsByClassName("grid-cell");
 
-  [...cells].forEach(cell => {
+  [...cells].forEach (cell => {
     cell.style.backgroundColor = "";
     cell.classList.add("uncolored");
   });
