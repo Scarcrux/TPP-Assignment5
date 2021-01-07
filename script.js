@@ -8,7 +8,7 @@ createCell = (className) => {
   return cell;
 }
 
-// Requirement 1: Add Rows
+// Requirement 1: Add Row
 addRow = () => {
   let grid = document.getElementById("grid");
   let newRow = document.createElement("tr");
@@ -18,4 +18,16 @@ addRow = () => {
   for (let i = 0; i < cells; i++) {
     newRow.appendChild(createCell("grid-cell"));
   }
+}
+
+// Requirement 2: Add Column
+addColumn = () => {
+  let grid = document.getElementById("grid");
+  let rows = grid.getElementsByClassName("grid-row");
+
+  for (let i = 0; i < rows.length; i++) {
+    rows[i].appendChild(createCell("grid-cell"));
+  }
+
+  cells++;
 }
