@@ -62,3 +62,24 @@ fillAllUncolored = () => {
       cell.classList.remove("uncolored");
   });
 }
+
+// Requirement 7: Fill All Uncolored Cells with Current Color
+fillAllUncolored = () => {
+  let cells = document.getElementsByClassName("grid-cell");
+  let uncolored = [...cells].filter(cell => cell.classList.contains("uncolored"));
+
+  uncolored.forEach(cell => {
+    cell.style.backgroundColor = currentColor;
+    cell.classList.remove("uncolored");
+  });
+}
+
+// Requirement 8: Fill All Cells with Current Color
+fillAllCells = () => {
+  let cells = document.getElementsByClassName("grid-cell");
+
+  [...cells].forEach(cell => {
+    cell.style.backgroundColor = currentColor;
+    cell.classList.remove("uncolored");
+  });
+}
