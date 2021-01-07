@@ -57,17 +57,17 @@ removeColumn = () => {
 //Requirement 5:
 function pickNeonGreen(){
         selectedColor = "#39FF14";
-        c.textContent = "Color Selected: Neon Green"
+        c.textContent = "Color: Neon Green"
 }
 
 function pickPurple(){
         selectedColor = "#6A0DAD";
-        c.textContent = "Color Selected: Purple"
+        c.textContent = "Color: Purple"
 }
 
 function colorRevert(){
         selectecdColor = "darkslategray";
-        c.textContent = "Color Selected: Gray"
+        c.textContent = "Color: Gray"
 }
 
 // Requirement 7: Fill All Uncolored Cells with Current Color
