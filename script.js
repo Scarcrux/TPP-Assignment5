@@ -1,4 +1,5 @@
 let cells = 1;
+let currentColor = "red";
 
 // Utility Function
 createCell = (className) => {
@@ -39,7 +40,7 @@ removeRow = () => {
   grid.deleteRow(grid.rows.length - 1);
 }
 
-// Requirement 4: Remove Row
+// Requirement 4: Remove Column
 removeColumn = () => {
   let grid = document.getElementById("grid");
   let lastColumn = grid.rows[0].cells.length - 1;
@@ -51,3 +52,13 @@ removeColumn = () => {
   cells--;
 }
 
+// Requirement 7: Fill All Uncolored Cells with Current Color
+fillAllUncolored = () => {
+  let cells = document.getElementsByClassName("grid-cell");
+  let uncolored = [...cells].filter(cell => cell.classList.contains("uncolored"));
+
+  uncolored.forEach(cell => {
+      cell.style.backgroundColor = currentColor;
+      cell.classList.remove("uncolored");
+  });
+}
