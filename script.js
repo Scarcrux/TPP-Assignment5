@@ -1,5 +1,6 @@
 let cells = 1;
 let currentColor = "darkslategray";
+let c = document.getElementById("CC");
 
 // Utility Function
 createCell = (className) => {
@@ -56,14 +57,17 @@ removeColumn = () => {
 //Requirement 5:
 function pickNeonGreen(){
         selectedColor = "#39FF14";
+        c.textContent = "Color Selected: Neon Green"
 }
 
 function pickPurple(){
         selectedColor = "#6A0DAD";
+        c.textContent = "Color Selected: Purple"
 }
 
 function colorRevert(){
         selectecdColor = "darkslategray";
+        c.textContent = "Color Selected: Gray"
 }
 
 // Requirement 7: Fill All Uncolored Cells with Current Color
