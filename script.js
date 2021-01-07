@@ -31,3 +31,10 @@ addColumn = () => {
 
   cells++;
 }
+
+// Requirement 3: Remove Row
+removeRow = () => {
+  let grid = document.getElementById("grid");
+
+  grid.deleteRow(grid.rows.length - 1);
+}
