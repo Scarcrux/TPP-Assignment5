@@ -38,3 +38,16 @@ removeRow = () => {
 
   grid.deleteRow(grid.rows.length - 1);
 }
+
+// Requirement 4: Remove Row
+removeColumn = () => {
+  let grid = document.getElementById("grid");
+  let lastColumn = grid.rows[0].cells.length - 1;
+
+  for (let i = 0; i < grid.rows.length; i++) {
+    grid.rows[i].deleteCell(lastColumn);
+  }
+
+  cells--;
+}
+
