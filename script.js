@@ -1,5 +1,5 @@
 let cells = 1;
-let currentColor = "red";
+let currentColor = "darkcyan";
 
 // Utility Function
 createCell = (className) => {
@@ -50,6 +50,19 @@ removeColumn = () => {
   }
 
   cells--;
+}
+
+//Requirement 5:
+function pickNeonGreen(){
+        selectedColor = "#39FF14";
+}
+
+function pickPurple(){
+        selectedColor = "#6A0DAD";
+}
+
+function colorRevert(){
+        selectecdColor = "darkcyan";
 }
 
 // Requirement 7: Fill All Uncolored Cells with Current Color
