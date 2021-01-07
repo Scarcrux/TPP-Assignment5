@@ -1,11 +1,12 @@
 let cells = 1;
-let currentColor = "darkcyan";
+let currentColor = "darkslategray";
 
 // Utility Function
 createCell = (className) => {
   let cell = document.createElement("td");
   cell.classList.add(className);
   cell.classList.add("uncolored");
+  addEventListener("click", selectedColor);
   return cell;
 }
 
@@ -62,7 +63,7 @@ function pickPurple(){
 }
 
 function colorRevert(){
-        selectecdColor = "darkcyan";
+        selectecdColor = "darkslategray";
 }
 
 // Requirement 7: Fill All Uncolored Cells with Current Color
