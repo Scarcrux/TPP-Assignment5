@@ -1,6 +1,6 @@
-let cells = 1;
+let cells = 1; // Total number of cells in the grid
 let currentColor = "darkslategray";
-let paint = false;
+let paint = false; // Requirement 10 Variable
 
 // Utility Function - Requirement 6: Change Color of a Single Cell
 function changeColor() {
