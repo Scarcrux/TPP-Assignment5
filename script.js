@@ -1,10 +1,25 @@
 let cells = 1;
+<<<<<<< Updated upstream
+=======
+let currentColor = "darkslategray";
+
+// Utility Function - Requirement 6: Change Color
+function changeColor() {
+  this.style.backgroundColor = currentColor;
+  this.classList.remove("uncolored");
+}
+>>>>>>> Stashed changes
 
 // Utility Function
 createCell = (className) => {
   let cell = document.createElement("td");
   cell.classList.add(className);
   cell.classList.add("uncolored");
+<<<<<<< Updated upstream
+=======
+  // Requirement 6: Change Color
+  cell.addEventListener("click", changeColor);
+>>>>>>> Stashed changes
   return cell;
 }
 
@@ -51,3 +66,55 @@ removeColumn = () => {
   cells--;
 }
 
+<<<<<<< Updated upstream
+=======
+// Requirement 5: Select Color
+function pickNeonGreen() {
+  currentColor = "#39FF14";
+  let c = document.getElementById("CC")
+  c.innerText = "Color: Neon Green"
+}
+
+function pickPurple() {
+  currentColor = "#6A0DAD";
+  let c = document.getElementById("CC")
+  c.innerText = "Color: Purple"
+}
+
+function colorRevert() {
+  currentColor = "darkslategray";
+  let c = document.getElementById("CC")
+  c.innerText = "Color: Gray"
+}
+
+// Requirement 7: Fill All Uncolored Cells with Current Color
+fillAllUncolored = () => {
+  let cells = document.getElementsByClassName("grid-cell");
+  let uncolored = [...cells].filter(cell => cell.classList.contains("uncolored"));
+
+  uncolored.forEach (cell => {
+    cell.style.backgroundColor = currentColor;
+    cell.classList.remove("uncolored");
+  });
+}
+
+// Requirement 8: Fill All Cells with Current Color
+fillAllCells = () => {
+  let cells = document.getElementsByClassName("grid-cell");
+
+  [...cells].forEach(cell => {
+    cell.style.backgroundColor = currentColor;
+    cell.classList.remove("uncolored");
+  });
+}
+
+// Requirement 9: Clear All Cells
+clearAllCells = () => {
+  let cells = document.getElementsByClassName("grid-cell");
+
+  [...cells].forEach (cell => {
+    cell.style.backgroundColor = "";
+    cell.classList.add("uncolored");
+  });
+}
+>>>>>>> Stashed changes
