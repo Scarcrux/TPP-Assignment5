@@ -1,7 +1,8 @@
 let cells = 1;
 let currentColor = "darkslategray";
+let paint = false;
 
-// Utility Function - Requirement 6: Change Color
+// Utility Function - Requirement 6: Change Color of a Single Cell
 function changeColor() {
   this.style.backgroundColor = currentColor;
   this.classList.remove("uncolored");
@@ -12,8 +13,17 @@ createCell = (className) => {
   let cell = document.createElement("td");
   cell.classList.add(className);
   cell.classList.add("uncolored");
-  // Requirement 6: Change Color
+  // Requirement 6: Change Color of a Single Cell
   cell.addEventListener("click", changeColor);
+  // Requirement 10: Color Cells by Clicking, Holding Down Button and Hovering over Them
+  cell.addEventListener("mousedown", e => paint = true);
+  cell.addEventListener("mouseup", e => paint = false)
+  cell.addEventListener("mousemove", e => {
+    if (paint) {
+      cell.style.backgroundColor = currentColor;
+      cell.classList.remove("uncolored");
+    }
+  });
   return cell;
 }
 
@@ -61,19 +71,19 @@ removeColumn = () => {
 }
 
 // Requirement 5: Select Color from Dropdown Menu
-function pickNeonGreen() {
+pickNeonGreen = () => {
   currentColor = "#39FF14";
   let c = document.getElementById("CC")
   c.innerText = "Color: Neon Green"
 }
 
-function pickPurple() {
+pickPurple = () => {
   currentColor = "#6A0DAD";
   let c = document.getElementById("CC")
   c.innerText = "Color: Purple"
 }
 
-function colorRevert() {
+colorRevert = () => {
   currentColor = "darkslategray";
   let c = document.getElementById("CC")
   c.innerText = "Color: Gray"
