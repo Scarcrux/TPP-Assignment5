@@ -77,6 +77,7 @@ function colorRevert() {
   currentColor = "darkslategray";
   let c = document.getElementById("CC")
   c.innerText = "Color: Gray"
+}
 
 // Requirement 7: Fill All Uncolored Cells with Current Color
 fillAllUncolored = () => {
