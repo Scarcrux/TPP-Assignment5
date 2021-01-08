@@ -1,6 +1,4 @@
 let cells = 1;
-<<<<<<< Updated upstream
-=======
 let currentColor = "darkslategray";
 
 // Utility Function - Requirement 6: Change Color
@@ -8,18 +6,14 @@ function changeColor() {
   this.style.backgroundColor = currentColor;
   this.classList.remove("uncolored");
 }
->>>>>>> Stashed changes
 
 // Utility Function
 createCell = (className) => {
   let cell = document.createElement("td");
   cell.classList.add(className);
   cell.classList.add("uncolored");
-<<<<<<< Updated upstream
-=======
   // Requirement 6: Change Color
   cell.addEventListener("click", changeColor);
->>>>>>> Stashed changes
   return cell;
 }
 
@@ -54,7 +48,7 @@ removeRow = () => {
   grid.deleteRow(grid.rows.length - 1);
 }
 
-// Requirement 4: Remove Row
+// Requirement 4: Remove Column
 removeColumn = () => {
   let grid = document.getElementById("grid");
   let lastColumn = grid.rows[0].cells.length - 1;
@@ -66,8 +60,6 @@ removeColumn = () => {
   cells--;
 }
 
-<<<<<<< Updated upstream
-=======
 // Requirement 5: Select Color
 function pickNeonGreen() {
   currentColor = "#39FF14";
@@ -85,7 +77,6 @@ function colorRevert() {
   currentColor = "darkslategray";
   let c = document.getElementById("CC")
   c.innerText = "Color: Gray"
-}
 
 // Requirement 7: Fill All Uncolored Cells with Current Color
 fillAllUncolored = () => {
@@ -117,4 +108,3 @@ clearAllCells = () => {
     cell.classList.add("uncolored");
   });
 }
->>>>>>> Stashed changes
