@@ -60,7 +60,7 @@ removeColumn = () => {
   cells--;
 }
 
-// Requirement 5: Select Color
+// Requirement 5: Select Color from Dropdown Menu
 function pickNeonGreen() {
   currentColor = "#39FF14";
   let c = document.getElementById("CC")
