@@ -17,7 +17,7 @@ createCell = (className) => {
   cell.addEventListener("click", changeColor);
   // Requirement 10: Color Cells by Clicking, Holding Down Button and Hovering over Them
   cell.addEventListener("mousedown", e => paint = true);
-  cell.addEventListener("mouseup", e => paint = false)
+  cell.addEventListener("mouseup", e => paint = false);
   cell.addEventListener("mousemove", e => {
     if (paint) {
       cell.style.backgroundColor = currentColor;
