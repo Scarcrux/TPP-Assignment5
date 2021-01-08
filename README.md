@@ -1,9 +1,12 @@
-# Assignment-5
-DOM Challenges 3
+## TPP Assignment 5: DOM Challenges 3 ##
 
-**Goal:** This is another exercise to further demonstrate an understanding of HTML, CSS, JS, DOM manipulation, and handling user events
+## Goal
 
-**Direction:** For each user story, make a feature branch. Try to commit often and commit frequently on each feature branch. Please incorporate GitHub Projects as well, using the Automated Kanban template. Create a note for each user story and then convert that note to an issue. Remember, try to have your branches named as closely to the feature/ticket/issue it is intended to build out. Do not forget to type in “closes #” in the body of Pull Requests to close associated issues.
+This is another exercise to further demonstrate an understanding of HTML, CSS, JS, DOM manipulation, and handling user events
+
+## Direction
+
+For each user story, make a feature branch. Try to commit often and commit frequently on each feature branch. Please incorporate GitHub Projects as well, using the Automated Kanban template. Create a note for each user story and then convert that note to an issue. Remember, try to have your branches named as closely to the feature/ticket/issue it is intended to build out. Do not forget to type in “closes #” in the body of Pull Requests to close associated issues.
 
 Click on a ticket/issue and explore the different sections such as “Assignees, Labels, and Projects” and make sure that your ticket is associated to your project, otherwise your PRs and Tickets won’t be automated and tethered together (this should be done for you already, but double-check).
 
@@ -20,7 +23,9 @@ A few useful methods, properties, and events for this assignment:
 - `mouseover`
 - `mouseup`
 
-**Assignment:** Based on the in-class demonstration, complete the following user stories:
+## Assignment
+
+Based on the in-class demonstration, complete the following user stories:
 
 As a user, I can:
 - add rows to the grid
